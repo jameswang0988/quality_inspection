@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quality Inspection Calculator</title>
+</head>
+<body>
+    <h1 class="title">鐵盤420檢驗</h1>
+
+    <div class="input-container">
+        <label for="inspect-date">檢驗日期 Inspect Date:</label>
+        <input type="date" id="inspect-date">
+    </div>
+    
+    <div class="input-container">
+        <label for="inspection-number">檢驗數 Inspection Number (pcs):</label>
+        <input type="number" id="inspection-number">
+    </div>
+
+    <div class="input-container">
+        <label for="total-defects">總缺陷數 Total Defects (pcs):</label>
+        <input type="number" id="total-defects">
+    </div>
+
+    <div class="input-container">
+        <label for="white-dot-defects">白點缺陷數 White Dot Defects (pcs):</label>
+        <input type="number" id="white-dot-defects">
+    </div>
+
+    <div class="input-container">
+        <label for="scratch-defects">刮痕缺陷數 Scratch Defects (pcs):</label>
+        <input type="number" id="scratch-defects">
+    </div>
+
+    <div class="input-container">
+        <label for="cutting-trace-defects">切割痕跡缺陷數 Cutting Trace Defects (pcs):</label>
+        <input type="number" id="cutting-trace-defects">
+    </div>
+
+    <button id="calculate-button">計算 Calculate</button>
+
+    <div class="output-container">
+        <p class="output-label">白點比例 White Dot Ratio:</p>
+        <p id="white-dot-result" class="output-value"></p>
+    </div>
+
+    <div class="output-container">
+        <p class="output-label">刮痕比例 Scratch Ratio:</p>
+        <p id="scratch-result" class="output-value"></p>
+    </div>
+
+    <div class="output-container">
+        <p class="output-label">切割痕跡比例 Cutting Trace Ratio:</p>
+        <p id="cutting-trace-result" class="output-value"></p>
+    </div>
+
+    <div class="output-container">
+        <p class="output-label">缺陷率 Defect Rate:</p>
+        <p id="defect-rate-result" class="output-value"></p>
+    </div>
+
+    <button id="reset-button">重置 Reset</button>
+    <button id="save-button">保存 Save</button>
+
+    <script src="FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
